@@ -1,0 +1,7 @@
+apiVersion: containerssh.patweber.de/v1alpha1
+kind: ContainerSSH
+metadata:
+  name: containerssh-sample
+spec:
+  # Add fields here
+  foo: bar
