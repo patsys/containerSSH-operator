@@ -18,6 +18,7 @@ package v1alpha1
 
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"github.com/containerssh/configuration"
 )
 
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
@@ -29,7 +30,7 @@ type ContainerSSHSpec struct {
 	// Important: Run "make" to regenerate code after modifying this file
 
 	// Foo is an example field of ContainerSSH. Edit ContainerSSH_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Config configuration.AppConfig `json:"config,omitempty"`
 }
 
 // ContainerSSHStatus defines the observed state of ContainerSSH
